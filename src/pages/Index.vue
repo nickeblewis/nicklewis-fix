@@ -41,7 +41,7 @@
             :key="post.id"  
             class="checkmark mb-6">
             <div>
-              <g-link :to="post.node.path" class="text-copy-primary">{{ post.node.title }}</g-link>
+              {{ post.node.section }} - <g-link :to="post.node.path" class="text-copy-primary">{{ post.node.title }}</g-link>
             </div>
             <div class="text-lg text-gray-600">
               {{ post.node.summary }}
